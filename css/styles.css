@@ -10,6 +10,8 @@
     --color-white: #fff;
     --color-green: #38AF90;
     --color-cinza-claro: #F0F0F0;
+    --color-black: #383838;
+    --color-rose: #DD7E92;
 }
 
 html, body {
@@ -112,19 +114,31 @@ html, body {
     
 }
 
-.dsplaygames-form-btn-container {
-    
-    width: 180px;
-    height: 40px;
-    color: #DD7E92;
+.container-button {
+    text-align: center;
+    width: 244px;
+    height: 67px;
+    margin: 28px 38px 40px 38px;
     background-color: #DD7E92;
-    border: #DD7E92 2px solid;
-    margin: 28px 38px 40px 28px;
+    border-radius: 5px;
+    
 }
+
+.dsmplay-btn {
+    
+    padding-top: 25px;
+    color: var(--color-white);
+    background-color: #DD7E92;
+    border: 0;
+    
+}
+
 
 #games {
     width: 320px;
     background-color: var(--color-cinza-claro);
+    height: 1216px;
+    
 
 }
 
@@ -133,10 +147,10 @@ html, body {
     text-align: center;
     font-size: 24px;
     color: var(--color-green);
-
 }
 
-.dsplay-card {
+.dsplay-card { 
+    padding-top: 0px;
    
 
 }
@@ -176,4 +190,125 @@ html, body {
     height: 140px;
     width: 300px;
     border-radius: 0px 0px 10px 10px;
+}
+
+#inscricao {
+    width: 320px;
+    
+}
+
+#inscricao p {
+    padding: 20px 39px 5px 8px;
+}
+
+.container-form {
+    background-color:var(--color-cinza-claro);
+    margin: 12px;
+    border-radius: 10px;
+   
+}
+
+#inscricao h2 {
+    padding: 40px 44px 16px 45px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-gray);
+}
+
+.container-name-button {
+    padding: 52px 12px 0px 8px;
+    text-align: center;
+}
+
+.container-email-button {
+    padding: 20px 12px 20px 8px;
+    text-align: center;
+}
+
+.container-prataform-level {
+    padding-left: 8px;
+}
+
+.container-selec {
+    padding: 2px 0;
+}
+
+.checkbor-container {
+ padding: 36px 9px 48px 8px;
+}
+
+
+
+.container-button-inscricao {
+    text-align: center;
+    width: 244px;
+    height: 67px;
+    margin: 47px 30px 20px 26px;
+    background-color: #DD7E92;
+    border-radius: 5px;
+    
+}
+
+.dsmplay-btn-limpar {
+    padding-top: 25px;
+    color: var(--color-rose);
+    background-color: var(--color-white);
+    border: 0;
+    font-size: 18px;
+    
+
+
+
+}
+
+.button-inscricao-limpar {
+    text-align: center;
+    width: 244px;
+    height: 67px;
+    margin: 47px 30px 20px 26px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    border: 2px solid var(--color-rose);
+    
+}
+
+.button-inscricao {
+    
+    padding-bottom: 20px;
+}
+
+
+.footer-container {
+    width: 320px;
+    height: 302px;
+    background-color: var(--color-black);
+    text-align: center;
+    
+    
+}
+
+.footer-container p {
+    
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+
+.container-itens-footer {
+    padding: 28px 0px 8px 0px;
+}
+
+.container-itens-footer1 {
+    padding-bottom: 38px;
+}
+
+.container-itens-footer2 { 
+    padding: 37px;
+
+}
+
+.container-itens-footer3 {
+
+    padding: 37px 81px 0px 78px;
+
 }

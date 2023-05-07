@@ -27,6 +27,7 @@ html, body {
    height: 90px;
 }
 
+
 .conteudo-header {
     display: flex;
     align-items: center;
@@ -34,9 +35,29 @@ html, body {
     padding: 14px;
   
 }
+.conteudo-header img { 
+  margin-left: 29px;
 
-.itens-header {
+}
+.conteudo-header p {
+    margin-left: 29px;
+}
 
+
+.container-profile {
+
+    color: var(--color-white);
+}
+
+.container-profile img {
+    margin-right: 5px;
+  
+}
+
+.container-itens-header {
+display: flex;
+font-size: 14px;
+align-items: center;
     
 }
 
@@ -111,8 +132,7 @@ html, body {
 .container-news {
     
     
-    width: 990px;
-   height: 247px;
+    
     padding: 20px 36px 0px 34px;
     background-color: var(--color-cinza-claro);
     margin: 8px 10px 28px 10px;
@@ -189,6 +209,11 @@ html, body {
     background-color: var(--color-cinza-claro);
     height: 1330px;
     width: 100%;
+    
+}
+
+
+.container {
     
 }
 
@@ -277,8 +302,10 @@ html, body {
 
 #inscricao {
 
-    text-align: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
 
@@ -288,10 +315,14 @@ html, body {
 }
 
 .container-form {
+    
     text-align: center;
     background-color:var(--color-cinza-claro);
     margin: 12px;
     border-radius: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+    
    
 }
 
@@ -304,6 +335,7 @@ html, body {
 
 .container-name-button {
     padding-top: 5px;
+    
     padding-left: 8px;
     padding-bottom: 2px;
     text-align: left;
@@ -324,19 +356,17 @@ html, body {
     text-align: center;
 }
 
-.container-form {
-    align-items: left;
-}
+
 .container-prataform-level {
-    align-items: left;
+    text-align: center;
 }
 
 .container-selec {
-    align-items: left;
+    align-items: center;
 }
 
 .container-selec {
-    text-align: left;
+    align-items: center;
 }
 
 
@@ -389,7 +419,7 @@ html, body {
 
 
 .container-buton-inicio {
-    width: 260px;
+    width: 80%;
     height: 50px;
     margin: 20px 12px 20px 8px;
 }
@@ -435,6 +465,7 @@ html, body {
 @media(min-width: 768px) {
     .container {
         display: flex; 
+        
     }
     
 }
@@ -446,3 +477,31 @@ html, body {
     }
 }
 
+@media(min-width: 768px) {
+    .container-profile {
+        color: #fff;
+        font-size: 14px;
+        
+    }
+}
+
+@media(min-width: 992px) {
+    .container-news {
+        max-width: 990px;
+        max-height: 247px;
+    }
+}
+
+
+
+@media(max-width: 568px) { 
+    .container-itens-header {
+        font-size: 0px;
+    }
+}
+
+@media(max-width: 568px) {
+    .container-form {
+       
+    }
+} 

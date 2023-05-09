@@ -39,19 +39,10 @@ html, body {
   margin-left: 29px;
 
 }
-.conteudo-header p {
-    margin-left: 29px;
-}
-
 
 .container-profile {
-
     color: var(--color-white);
-}
-
-.container-profile img {
     margin-right: 5px;
-  
 }
 
 .container-itens-header {
@@ -77,13 +68,7 @@ align-items: center;
 }
 
 
-.container-profile span {
-    
-  background-color: red;
-  text-align: center;
-  
-  
-}
+
 
 .container-profile p{
     display: flex;
@@ -115,7 +100,7 @@ align-items: center;
 .container-bloco-news {
     padding-left: 5px;
    
-    
+  
   
 }
 
@@ -132,11 +117,11 @@ align-items: center;
 .container-news {
     
     
-    
     padding: 20px 36px 0px 34px;
     background-color: var(--color-cinza-claro);
     margin: 8px 10px 28px 10px;
     border-radius: 10px;
+    
 
 }
 .container-news h2 {
@@ -180,9 +165,10 @@ align-items: center;
 .container-button {
   
     text-align: center;
- 
     
+  padding-bottom: 76px;
     
+  padding-top: 40px;
     
 }
 
@@ -197,7 +183,6 @@ align-items: center;
     font-size: 18px;
     
 }
-
 
 
 
@@ -254,11 +239,6 @@ align-items: center;
 } 
 
 
-.container-flex {
-    
-}
-
-
 
 .dsplay-card img {
     width: 300px;
@@ -312,6 +292,7 @@ align-items: center;
 #inscricao p {
     text-align: left;
     padding: 20px 39px 5px 8px;
+    padding-left: 22px;
 }
 
 .container-form {
@@ -320,16 +301,22 @@ align-items: center;
     background-color:var(--color-cinza-claro);
     margin: 12px;
     border-radius: 10px;
-    width: 60%;
-    margin-bottom: 20px;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
     
    
+}
+
+.container-formulari {
+    padding-left: 18px;
+    margin-bottom: 20px;
 }
 
 #inscricao h2 {
     padding: 40px 44px 16px 45px;
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     color: var(--color-gray);
 }
 
@@ -339,6 +326,13 @@ align-items: center;
     padding-left: 8px;
     padding-bottom: 2px;
     text-align: left;
+}
+
+.container-checkbox {
+    padding-top: 15px;
+    padding-left: 22px;
+
+    
 }
 
 .inscricao-name {
@@ -377,16 +371,22 @@ align-items: center;
 
 
 
-
-.container-button-inscricao {
-     
+.button-inscricao {
     
+    flex-direction: column;
+    align-items: center;
+    
+   
 }
 
-.button-inscricao {
-    text-align: center;
-    padding: 20px 0 5px 0;
-   
+.button-inscricao1 {
+    margin-top: 20px;
+
+}
+.control-button {
+    display: flex;
+    
+    
 }
 
 .dsmplay-btn {
@@ -397,7 +397,7 @@ align-items: center;
 .dsmplay-btn-limpar {
     
    
-   
+    margin: 10px;
     border: 0;
     font-size: 18px;
     font-weight: bold;
@@ -408,7 +408,7 @@ align-items: center;
     border: #DD7E92 2px solid;
     border-radius: 5px;
     font-size: 18px;
-    margin-bottom: 25px;
+    
     
 }
 
@@ -424,55 +424,68 @@ align-items: center;
     margin: 20px 12px 20px 8px;
 }
 
-
-.footer-container {
-    width: 100%;
-    height: 302px;
-    background-color: var(--color-black);
-    text-align: center;
-}
-
 .container-formulari {
     align-items: left;
 }
 
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-black);
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    
+    
+}
+
+
 .footer-container p {
     color: var(--color-white);
     font-size: 14px;
+    
 }
-
 
 
 .container-itens-footer {
-    padding: 28px 0px 8px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    
+    
 }
 
-.container-itens-footer1 {
-    padding-bottom: 38px;
+.container-itens-footer p {
+    align-items: center;
+    margin: 0px 15px;
 }
 
-.container-itens-footer2 { 
-    padding: 37px;
 
+.cont1 {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 0px 10px;
+    
 }
 
-.container-itens-footer3 {
 
-    padding: 37px 81px 0px 78px;
 
-}
-
-@media(min-width: 768px) {
+@media(min-width: 992px) {
     .container {
         display: flex; 
         
     }
+    #inscricao { 
+        height: 600px;
+
+    }
     
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
     #games {
-        max-height: 500px;
+       height: 550px;
     
     }
 }
@@ -500,8 +513,50 @@ align-items: center;
     }
 }
 
-@media(max-width: 568px) {
-    .container-form {
+@media(min-width: 992px) {
+    .footer-container {
+        text-align: unset;
+       
        
     }
 } 
+
+@media(min-width: 992px) {
+    .button-inscricao {
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media(min-width: 576px) {
+    .container-form {
+       width: 100%;
+    } 
+   
+}
+
+@media(min-width: 576px) {
+    .container-form {
+       width: 60%;
+    } 
+   
+}
+
+@media(max-width: 992px) {
+    .control-button {
+        display: block;
+    }
+
+    .footer-container {
+        margin-top: 50px;
+    }
+}
+
+@media(min-width: 576px) {
+    .container-footer5 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+    }
+}
